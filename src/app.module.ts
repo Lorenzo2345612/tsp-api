@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DbConstants } from './constants/db.constants';
+import { DbConstants } from 'src/constants/db.constants';
 import { User } from './user/entities/user.entity';
 import { News } from 'src/news/entities/news.entity';
 import { RiskAreasModule } from './risk-zones/risk-areas.module';
