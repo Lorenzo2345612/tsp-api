@@ -1,18 +1,16 @@
-console.info(__dirname);
-
 import { Module } from '@nestjs/common';
-import { AppController } from 'src/app.controller';
-import { AppService } from 'src/app.service';
+import { AppController } from '/app/src/app.controller';
+import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DbConstants } from 'src/constants/db.constants';
-import { User } from 'src/user/entities/user.entity';
+import { DbConstants } from '/app/src/constants/db.constants';
+import { User } from './user/entities/user.entity';
 import { News } from 'src/news/entities/news.entity';
-import { RiskAreasModule } from 'src/risk-zones/risk-areas.module';
-import { NotificationModule } from 'src/notification/notification.module';
-import { CheckpointModule } from 'src/checkpoint/checkpoint.module';
-import { Checkpoint } from 'src/checkpoint/entities/checkpoint.entity';
-import { UserModule } from 'src/user/user.module';
-import { NewsModule } from 'src/news/news.module';
+import { RiskAreasModule } from '/app/src/risk-zones/risk-areas.module';
+import { NotificationModule } from '/app/src/notification/notification.module';
+import { CheckpointModule } from '/app/src/checkpoint/checkpoint.module';
+import { Checkpoint } from '/app/src/checkpoint/entities/checkpoint.entity';
+import { UserModule } from '/app/src/user/user.module';
+import { NewsModule } from '/app/src/news/news.module';
 
 @Module({
   imports: [
