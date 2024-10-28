@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from '/app/src/app.controller';
-import { AppService } from './app.service';
+import { AppService } from '/app/src/app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DbConstants } from '/app/src/constants/db.constants';
-import { User } from './user/entities/user.entity';
-import { News } from 'src/news/entities/news.entity';
+import { User } from '/app/src/user/entities/user.entity';
+import { News } from '/app/src/news/entities/news.entity';
 import { RiskAreasModule } from '/app/src/risk-zones/risk-areas.module';
 import { NotificationModule } from '/app/src/notification/notification.module';
 import { CheckpointModule } from '/app/src/checkpoint/checkpoint.module';
