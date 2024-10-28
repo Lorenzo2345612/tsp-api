@@ -1,16 +1,16 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppController } from 'src/app.controller';
+import { AppService } from 'src/app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DbConstants } from 'src/constants/db.constants';
-import { User } from './user/entities/user.entity';
+import { User } from 'src/user/entities/user.entity';
 import { News } from 'src/news/entities/news.entity';
-import { RiskAreasModule } from './risk-zones/risk-areas.module';
-import { NotificationModule } from './notification/notification.module';
-import { CheckpointModule } from './checkpoint/checkpoint.module';
-import { Checkpoint } from './checkpoint/entities/checkpoint.entity';
-import { UserModule } from './user/user.module';
-import { NewsModule } from './news/news.module';
+import { RiskAreasModule } from 'src/risk-zones/risk-areas.module';
+import { NotificationModule } from 'src/notification/notification.module';
+import { CheckpointModule } from 'src/checkpoint/checkpoint.module';
+import { Checkpoint } from 'src/checkpoint/entities/checkpoint.entity';
+import { UserModule } from 'src/user/user.module';
+import { NewsModule } from 'src/news/news.module';
 
 @Module({
   imports: [
